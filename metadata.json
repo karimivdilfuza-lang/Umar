@@ -1,0 +1,8 @@
+{
+  "name": "Yamato: Japanese Spirit",
+  "description": "A premium and beautiful Japanese-inspired landing page showcasing the essence of Yamato culture and craft.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

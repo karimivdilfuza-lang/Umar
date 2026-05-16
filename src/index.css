@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+
+  --color-yamato-red: #B5121B;
+  --color-yamato-black: #0E0E0E;
+  --color-yamato-paper: #F6F4F0;
+  --color-yamato-ink: #1C1C1C;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-yamato-paper);
+    color: var(--color-yamato-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .premium-blur {
+    backdrop-filter: blur(12px);
+    background: rgba(246, 244, 240, 0.82);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-yamato-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-yamato-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8E0F16;
+}
